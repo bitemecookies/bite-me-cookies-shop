@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bite Me | Sweet Cookies</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom right, #fff7f0, #ffe8d6); /* Warm gradient background */
+      color: #4b2e05;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 30px; /* Increased padding */
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif; /* Elegant font for main title */
+      font-size: 4rem; /* Larger title */
+      color: #a0522d;
+      letter-spacing: 2px;
+      margin-bottom: 5px;
+      text-shadow: 3px 3px 6px rgba(0,0,0,0.15); /* Softer shadow */
+    }
+
+    header p {
+      color: #c17f4e;
+      font-weight: 600;
+      letter-spacing: 3px; /* More spaced out tagline */
+      font-size: 1.1rem;
+    }
+
+    h2 {
+      /* Centering the H2 text across the full width */
+      text-align: center;
+      color: #6b3e26; /* Slightly darker header color */
+      margin-top: 60px;
+      margin-bottom: 0;
+      padding-bottom: 5px;
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+    }
+
+    /* Decorative HR Divider */
+    .section-divider {
+      width: 150px; /* Controls the length of the line */
+      height: 2px;
+      background-color: #d4a373;
+      border: none;
+      margin: 10px auto 40px auto; /* Centers the HR line */
+    }
+    
+    .menu-section {
+      max-width: 1100px; /* Slightly wider menu for more spacious feel */
+      margin: 20px auto 60px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px; /* Increased gap */
+    }
+
+    .menu-card {
+      background: #fffaf3;
+      border-radius: 20px; /* Slightly rounder corners */
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-align: center;
+    }
+
+    .menu-card:hover {
+      transform: translateY(-8px); /* Deeper lift on hover */
+      box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+    }
+
+    .menu-card img {
+      width: 100%;
+      height: 250px; /* Taller images */
+      object-fit: cover;
+    }
+
+    .menu-info {
+      padding: 20px 15px;
+    }
+
+    .menu-info h3 {
+      margin: 10px 0 5px;
+      color: #6b3e26;
+      font-size: 1.5rem; /* Slightly larger title */
+    }
+
+    .menu-info p {
+      font-size: 1rem;
+      color: #5a4634;
+      min-height: 40px; /* Ensures consistent card height */
+    }
+
+    .price {
+      font-weight: 700;
+      color: #a0522d;
+      font-size: 1.4rem;
+      margin-top: 15px;
+    }
+
+    /* --- INSTAGRAM LINK STYLING (UPDATED) --- */
+    .centered-link {
+        text-align: center;
+        width: 100%;
+        padding: 40px 0 20px 0; 
+    }
+    
+    .centered-link a {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.1rem;
+        color: #c17f4e; 
+        text-decoration: none; 
+        font-weight: 600;
+        letter-spacing: 1px;
+        transition: color 0.3s ease;
+    }
+    
+    .centered-link a img {
+        /* Align the image vertically with the text next to it */
+        vertical-align: middle;
+        margin-right: 8px; /* Space between icon and text */
+        width: 24px; /* Slightly smaller icon size for integration */
+        height: 24px;
+    }
+
+    .centered-link a:hover {
+        color: #a0522d; 
+        text-decoration: underline;
+    }
+    /* ------------------------------------------- */
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-weight: bold;
+      color: #a0522d;
+      background-color: #fff2e1;
+      border-top: 1px solid #d4a373; 
+      box-shadow: 0 -2px 5px rgba(0,0,0,0.05); 
+    }
+
+    .reserve {
+      color: #c17f4e;
+      font-size: 1.3rem; 
+      letter-spacing: 3px;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Bite Me</h1>
+    <p>Sweet Cookies</p>
+  </header>
+
+  <h2>Cookies</h2>
+  <hr class="section-divider">
+  <section class="menu-section">
+    <div class="menu-card">
+      <img src="classic-og.jpg" alt="Classic OG">
+      <div class="menu-info">
+        <h3>Classic OG</h3>
+        <p>Soft and gooey chocolate chip cookie</p>
+        <div class="price">$40</div>
+      </div>
+    </div>
+
+    <div class="menu-card">
+      <img src="biscoff-cream.jpg" alt="Biscoff with Cream">
+      <div class="menu-info">
+        <h3>Biscoff with Cream</h3>
+        <p>Sweet Biscoff cookie filled with cream</p>
+        <div class="price">$50</div>
+      </div>
+    </div>
+
+    <div class="menu-card">
+      <img src="smores.jpg" alt="S'mores Cookie">
+      <div class="menu-info">
+        <h3>S'mores Cookie</h3>
+        <p>Chocolate cookie topped with marshmallow</p>
+        <div class="price">$50</div>
+      </div>
+    </div>
+
+    <div class="menu-card">
+      <img src="red-velvet.jpg" alt="Red Velvet">
+      <div class="menu-info">
+        <h3>Red Velvet with Nutella</h3>
+        <p>Rich red velvet cookie filled with Nutella</p>
+        <div class="price">$45</div>
+      </div>
+    </div>
+
+    <div class="menu-card">
+      <img src="matcha.jpg" alt="Matcha with Cream Cheese">
+      <div class="menu-info">
+        <h3>Matcha with Cream Cheese</h3>
+        <p>Earthy matcha flavor balanced with creamy cheese</p>
+        <div class="price">$50</div>
+      </div>
+    </div>
+  </section>
+
+  <h2>Brownies & Banana Cake</h2>
+  <hr class="section-divider">
+  <section class="menu-section">
+    <div class="menu-card">
+      <img src="brownie-choco.jpg" alt="Brownie Chocolate">
+      <div class="menu-info">
+        <h3>Brownies Chocolate</h3>
+        <p>Fudgy and rich chocolate brownies</p>
+        <div class="price">$120 (6 pcs)</div>
+      </div>
+    </div>
+
+    <div class="menu-card">
+      <img src="brownie-almond.jpg" alt="Brownie Choco with Almond">
+      <div class="menu-info">
+        <h3>Brownies Choco with Almond</h3>
+        <p>Crunchy almonds meet gooey chocolate</p>
+        <div class="price">$130 (6 pcs)</div>
+      </div>
+    </div>
+
+    <div class="menu-card">
+      <img src="banana-choco.jpg" alt="Banana Cake Chocolate">
+      <div class="menu-info">
+        <h3>Banana Cake Chocolate</h3>
+        <p>Moist banana loaf with chocolate flavor</p>
+        <div class="price">$80 (Whole Loaf)</div>
+      </div>
+    </div>
+
+    <div class="menu-card">
+      <img src="banana-almond.jpg" alt="Banana Cake Choco with Almond">
+      <div class="menu-info">
+        <h3>Banana Cake Choco with Almond</h3>
+        <p>Banana loaf topped with almond and choco bits</p>
+        <div class="price">$90 (Whole Loaf)</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="centered-link">
+      <a href="https://www.instagram.com/sugarcrumps_?igsh=MTZydXM2eXNhMmpuMQ==" target="_blank" rel="noopener noreferrer">
+          <img src="instagram-icon.png" alt="Instagram Profile" style="width:24px; height:24px;">
+          Follow us on Instagram for daily treats!
+      </a>
+  </div>
+  
+  <footer>
+    <p class="reserve">RESERVE YOURS NOW!</p>
+  </footer>
+</body>
+</html>
